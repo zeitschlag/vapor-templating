@@ -1,0 +1,11 @@
+<h1>Shopping List</h1>
+
+<p>Hey, can you please buy:</p>
+
+<ul>
+#loop(shoppingList, "productOnList") {
+    <li>#(productOnList)</li>
+}
+</ul>
+
+<p>You're the best, thank you!</p>

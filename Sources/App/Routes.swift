@@ -29,5 +29,14 @@ extension Droplet {
             
             return try self.view.make("age-check", context)
         }
+        
+        // loop
+        get("please-buy") { req in
+            let shoppingList = ["🎂", "🍺", "🍕", "🌻"]
+            
+            let context = ["shoppingList": shoppingList]
+            
+            return try self.view.make("please-buy", context)
+        }
     }
 }
