@@ -1,7 +1,0 @@
-<h1>Welcome to the Vapor Berlin Bar (VBB)</h1>
-
-#if(oldEnough) {
-    Grab yourself a 🍺, you're old enough!
-} ##else() {
-    Where are your parents?
-}

@@ -1,5 +1,10 @@
-<h1>Shopping List</h1>
+#extend("base")
 
+#export("title") {
+    Shopping List
+}
+
+#export("content") {
 <p>Hey, can you please buy:</p>
 
 <ul>
@@ -9,3 +14,4 @@
 </ul>
 
 <p>You're the best, thank you!</p>
+}

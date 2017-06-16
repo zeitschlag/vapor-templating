@@ -1,0 +1,13 @@
+#extend("base")
+
+#export("title") {
+    Welcome to the Vapor Berlin Bar (VBB)
+}
+
+#export("content") {
+    #if(oldEnough) {
+        Grab yourself a 🍺, you're old enough!
+    } ##else() {
+        Where are your parents?
+    }
+}

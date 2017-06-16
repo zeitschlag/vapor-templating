@@ -5,7 +5,7 @@ extension Droplet {
     func setupRoutes() throws {
         
         get("hello") { req in
-            return try self.view.make("hello")
+            return try self.view.make("Content/hello")
         }
         
         // variable
@@ -18,7 +18,7 @@ extension Droplet {
             let timeString = dateFormatter.string(from: Date())
             
             let context = ["time": timeString]
-            return try self.view.make("time", context)
+            return try self.view.make("Content/time", context)
         }
         
         // if else
@@ -27,7 +27,7 @@ extension Droplet {
             let age = 16
             let context = ["oldEnough": age >= 16]
             
-            return try self.view.make("age-check", context)
+            return try self.view.make("Content/age-check", context)
         }
         
         // loop
@@ -36,7 +36,7 @@ extension Droplet {
             
             let context = ["shoppingList": shoppingList]
             
-            return try self.view.make("please-buy", context)
+            return try self.view.make("Content/please-buy", context)
         }
     }
 }
