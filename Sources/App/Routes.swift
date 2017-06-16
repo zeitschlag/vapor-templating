@@ -20,5 +20,14 @@ extension Droplet {
             let context = ["time": timeString]
             return try self.view.make("time", context)
         }
+        
+        // if else
+        get("age-check") { req in
+            
+            let age = 16
+            let context = ["oldEnough": age >= 16]
+            
+            return try self.view.make("age-check", context)
+        }
     }
 }
